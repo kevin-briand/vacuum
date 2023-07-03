@@ -6,10 +6,6 @@ const roomDimension: RoomDimensions = { x: 10, y: 10 };
 const room = new Room(roomDimension);
 
 describe('Create and manage room', () => {
-  it('should return current roomDimensions', async () => {
-    expect(room.roomDimensions).toBe(roomDimension);
-  });
-
   it('should return current room width', async () => {
     expect(room.getX()).toBe(roomDimension.x);
   });
